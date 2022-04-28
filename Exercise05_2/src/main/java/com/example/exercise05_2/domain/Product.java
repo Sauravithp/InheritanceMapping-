@@ -11,9 +11,12 @@ import javax.persistence.*;
 @Table(name = "Product")
 @Getter
 @Setter
-@RequiredArgsConstructor
 @ToString
-public class Product {
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(
+        name="Product_Type",
+        discriminatorType=DiscriminatorType.STRING )
+public abstract class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
