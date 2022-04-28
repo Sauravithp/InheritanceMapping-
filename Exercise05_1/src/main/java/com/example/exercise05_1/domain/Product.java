@@ -3,6 +3,7 @@ package com.example.exercise05_1.domain;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @RequiredArgsConstructor
+@ToString
 public class Product {
 
     @Id

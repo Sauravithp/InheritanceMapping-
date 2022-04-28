@@ -25,7 +25,10 @@ public class Exercise051Application {
             Product.class));
 
     public static void main(String[] args) {
+
         OrderProduct();
+        System.out.println("**********Print Data**********");
+        print();
     }
 
     public static void OrderProduct(){
@@ -72,7 +75,7 @@ public class Exercise051Application {
 
             Order order2=new Order();
             order2.setDate(new Date());
-            order1.setOrderId("456");
+            order2.setOrderId("456");
             order2.setOrderLineList(Arrays.asList(orderLine1));
             session.save(order2);
 
@@ -94,6 +97,29 @@ public class Exercise051Application {
             System.out.println("Order Product completed, Session closed!!!!!");
         }
 
+    }
+
+    public static void print(){
+        Session session=null;
+        Transaction tx=null;
+
+        try{
+            session=sessionFactory.openSession();
+            tx=session.beginTransaction();
+
+          Customer customer=session.get(Customer.class,1L);
+            System.out.println("****************************Customer Details****************************");
+            System.out.println(customer.toString());
+            System.out.println("****************************Customer Ends****************************");
+
+            tx.commit();
+        }catch (HibernateException ex){
+            tx.rollback();
+            System.out.println(ex.getMessage());
+        }finally {
+            session.close();
+            System.out.println("Order Product completed, Session closed!!!!!");
+        }
     }
 
 }
