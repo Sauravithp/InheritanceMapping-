@@ -1,7 +1,6 @@
 package com.example.exercise05_2.domain;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
