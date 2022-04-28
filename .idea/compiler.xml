@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Exercise05_2_JoinedTable" />
         <module name="Exercise05_1" />
+        <module name="Exercise05_2_ConcreteClass" />
         <module name="Exercise05_2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Exercise05_1" target="11" />
       <module name="Exercise05_2" target="11" />
+      <module name="Exercise05_2_ConcreteClass" target="11" />
       <module name="Exercise05_2_JoinedTable" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Exercise05_1" options="-parameters" />
       <module name="Exercise05_2" options="-parameters" />
+      <module name="Exercise05_2_ConcreteClass" options="-parameters" />
       <module name="Exercise05_2_JoinedTable" options="-parameters" />
     </option>
   </component>
