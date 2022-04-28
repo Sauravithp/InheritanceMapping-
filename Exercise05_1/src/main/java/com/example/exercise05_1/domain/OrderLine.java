@@ -20,5 +20,5 @@ public class OrderLine {
 
     @ManyToOne
     @JoinColumn(name = "Product_Id")
-    private Product productList;
+    private Product product;
 }
