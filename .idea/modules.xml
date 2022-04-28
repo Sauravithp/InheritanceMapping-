@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exercise05_1/Exercise05_1.iml" filepath="$PROJECT_DIR$/Exercise05_1/Exercise05_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercise05_2/Exercise05_2.iml" filepath="$PROJECT_DIR$/Exercise05_2/Exercise05_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise05_2_JoinedTable/Exercise05_2_JoinedTable.iml" filepath="$PROJECT_DIR$/Exercise05_2_JoinedTable/Exercise05_2_JoinedTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/InheritanceMapping-.iml" filepath="$PROJECT_DIR$/.idea/InheritanceMapping-.iml" />
     </modules>
   </component>
